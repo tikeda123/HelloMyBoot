@@ -14,4 +14,10 @@ public class HelloController
     public String home() {
         return "Hello NEC, Spring Boot Sample Application in OpenShift Demo";
     }
+    
+    @RequestMapping("/test")
+    @ResponseBody
+    public String test() {
+        return "Hello NEC, Spring Boot Sample Application(in /test) in OpenShift Demo";
+    }
 }
