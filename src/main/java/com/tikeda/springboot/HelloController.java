@@ -12,12 +12,12 @@ public class HelloController
     @RequestMapping("/")
     @ResponseBody
     public String home() {
-        return "Hello HPE, Spring Boot Sample Application in OpenShift Demo";
+        return "Hello HPE v2, Spring Boot Sample Application in OpenShift Demo";
     }
     
     @RequestMapping("/test")
     @ResponseBody
     public String test() {
-        return "Hello HPE, Spring Boot Sample Application(in /test) in OpenShift Demo";
+        return "Hello HPE v2, Spring Boot Sample Application(in /test) in OpenShift Demo";
     }
 }
