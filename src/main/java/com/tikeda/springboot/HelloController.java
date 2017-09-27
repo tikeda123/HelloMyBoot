@@ -19,7 +19,7 @@ public class HelloController
     	String buf = new String();
     	try {
     	      InetAddress addr = InetAddress.getLocalHost();
-    	      buf = "Hello version 1, Spring Boot Sample Application: IP Address :" + addr.getHostAddress();
+    	      buf = "Hello version 1.0, Spring Boot Sample Application: IP Address :" + addr.getHostAddress();
     	    } catch (UnknownHostException e) {
     	      e.printStackTrace();
     	    }    	
@@ -28,7 +28,8 @@ public class HelloController
     
     @RequestMapping("/test")
     @ResponseBody
-    public String test() {
-        return "Hello Hello version1.0, Spring Boot Sample Application(in /test) in OpenShift Demo";
+    public String test()
+    {
+        return "Hello Hello version[1.0], Spring Boot Sample Application(in /test) in OpenShift Demo";
     }
 }
