@@ -11,13 +11,15 @@ import java.net.UnknownHostException;
 @EnableAutoConfiguration
 public class HelloController 
 {
+	
+	
     @RequestMapping("/")
     @ResponseBody
     public String home() {
     	String buf = new String();
     	try {
     	      InetAddress addr = InetAddress.getLocalHost();
-    	      buf = "Hello version V1.0, Spring Boot Sample Application: IP Address :" + addr.getHostAddress();
+    	      buf = "Hello version 1, Spring Boot Sample Application: IP Address :" + addr.getHostAddress();
     	    } catch (UnknownHostException e) {
     	      e.printStackTrace();
     	    }    	
@@ -27,6 +29,6 @@ public class HelloController
     @RequestMapping("/test")
     @ResponseBody
     public String test() {
-        return "Hello HPE ----V1-----, Spring Boot Sample Application(in /test) in OpenShift Demo";
+        return "Hello Hello version  , Spring Boot Sample Application(in /test) in OpenShift Demo";
     }
 }
