@@ -29,6 +29,6 @@ public class HelloController
     @RequestMapping("/test")
     @ResponseBody
     public String test() {
-        return "Hello Hello version  , Spring Boot Sample Application(in /test) in OpenShift Demo";
+        return "Hello Hello version1.0, Spring Boot Sample Application(in /test) in OpenShift Demo";
     }
 }
